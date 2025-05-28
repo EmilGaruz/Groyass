@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+		<style>
+  /* Contenedor padre */
+  .contenedor-padre {
+    display: flex; /* Usamos Flexbox */
+    justify-content: space-between; /* Espaciado entre elementos */
+    align-items: flex-start; /* Alineación superior */
+    gap: 10px; /* Espacio entre los elementos */
+    padding: 50px;
+  }
+.left-section {
+  width: 40%;
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.block {
+  margin-bottom: 20px;
+  padding: 30px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+			.right-section {
+  width: 60%;
+  padding: 20px;
+}
+
+iframe {
+  width: 100%;
+  height: 600px;
+  border: 10;
+}
+</style>
+</head>
+
+<body>
+	 <h1>Sucursales</h1>
+	<h5>Conoce nuestras diferentes tiendas con productos de oro, plata y acero inoxidable</h5>
+	<div class="contenedor-padre">
+  <div class="left-section">
+    <div class="block">		
+		 <h2>Capu</h2>
+      <p>Boulevard Norte No. 4222, Col. Las Cuartillas, C.P. 72050, Puebla</p>
+      <p>2222738300</p>
+    </div>
+	  <div class="block">
+	  <h2>Tulancingo</h2>
+	  <p>Calle Luis M. Ponce 710, Centro, 43600 Tulancingo, Hgo.</p>
+	  <p>7751050496</p>
+	  </div>
+	  <div class="block">
+	  <h2>Acatlán</h2>
+	  <p>Agustín Olvera, 43540 Acatlán, Hgo.</p>
+	  <p>7751149876</p>
+	  </div>
+	   <div class="block">
+	  <h2>Pachuca</h2>
+	  <p>Camino Real de La Plata 100 Colonia, Zona Plateada, 42080 Pachuca Hidalgo, Hgo.</p>
+	  <p>7712934781</p>		   
+	  </div>
+	  
+		</div>
+		
+	<div class="right-section">
+  <h2>Ubicación en Google Maps</h2>
+		<!-- Inserta aquí el iframe de Google Maps -->
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36695.82999087808!2d-98.76256560873227!3d20.07690812969822!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1a1ca52b3fb6f%3A0x581f9d86fa8ee68b!2sJoyer%C3%ADa%20Pandora!5e0!3m2!1ses-419!2smx!4v1747951040017!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>"
+			   </div>
+	</div>
+	<script src="pantalla_carga.js"></script>
+</body>
+</html>
