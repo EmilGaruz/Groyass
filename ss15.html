@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+</head>
+
+<body> <center>
+	<form action="/submit-form" method="post">
+	<label for="nombres" >Nombres</label>
+	<input type="text" id="name" name="username">
+		<br><br>
+		<label for="apellido" >Apellido</label>
+	<input type="text" id="apellidos" name="username">
+		<br><br> <lable for="telefono">Teléfono</lable>
+		 <input type="number" id=telefono name=telefono>
+		<br> <br> <label for=genero>Género:</label>
+		<input type="radio" id="hombre" name="genero" value="hombre">
+		<label for="hombre">Hombre</label>
+		<input type="radio" id="mujer" name="genero" value="mujer">
+			   <label for="mujer">Mujer</label>		
+		<br> <br> <h3>Horarios</h3>
+		<br> <input type="month"> <input type="time">
+		<br> <br> <label for="origen">Origen</label>
+		<select id="origen" name="origen">
+			   <option value="Hidalgo">Hidalgo</option>
+		<option value="puebla">Puebla</option>
+			<option value="cdmx">Cdmx</option>
+			<option value="guadalajara">Guadalajara</option></select>
+			<br> <br> <label for="condicion">He leído y he aceptado los términos y condiciones</label>
+		<input type="checkbox" id="condicion" name="condicion">
+		<br><br> <button>Enviar</button>
+		   </form></center>
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Documento sin título</title>
+	<style>
+    #chat {
+		background-color:#26EC9F;
+		width: 500px; 
+		height: 500px; 
+		border: 6px double  #003E45; 
+		padding: 20px; 
+		overflow-y: scroll; }
+    #input { width: 480px; }
+  </style>
+</head>
+
+<body>
+	
+<div id="chat"></div>
+  <input id="input" type="text" placeholder="Escribe aquí...">
+  <button onclick="enviar()">Enviar</button>
+
+  <script>
+    function enviar() {
+      let entrada = document.getElementById("input").value;
+      let chat = document.getElementById("chat");
+      chat.innerHTML += "<p><strong>Tú:</strong> " + entrada + "</p>";
+
+      let respuesta = "No entendí eso.";
+      if (entrada.toLowerCase().includes("hola")) respuesta = "¡Hola! ¿Cómo estás?";
+      if (entrada.toLowerCase().includes("adiós")) respuesta = "¡Hasta luego!";
+		else if (entrada.toLowerCase().includes("qué es dreamweaver")) respuesta = "Un programa de Adobe";
+		 if (entrada.toLowerCase().includes("¿que es figma?")) respuesta = "programa para hacer prototipos";
+
+      chat.innerHTML += "<p><strong>Bot:</strong> " + respuesta + "</p>";
+      document.getElementById("input").value = "";
+		 chat.scrollTop = chat.scrollHeight; 
+    }
+	   document.getElementById("input").addEventListener("keydown", function(event) {
+      if (event.key === "Enter") {
+        enviar();
+      }
+    });
+ 
+  </script>		
+		</body>
+</html>
